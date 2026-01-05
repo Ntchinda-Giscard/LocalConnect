@@ -1,14 +1,12 @@
-import { Link } from 'expo-router';
 import { StyleSheet, Text, View } from 'react-native';
 import "./global.css";
 
 export default function ModalScreen() {
   return (
-    <View style={styles.container}>
-      <Text>This is a modal</Text>
-      <Link href="/" dismissTo style={styles.link}>
-        <Text>Go to home screen</Text>
-      </Link>
+    <View className="flex-1 items-center justify-center bg-white">
+      <Text className="text-xl font-bold text-blue-500">
+        Welcome to Nativewind!
+      </Text>
     </View>
   );
 }
